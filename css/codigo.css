@@ -39,25 +39,24 @@ body {
 .container__header {     /** CAMBIAR A FLEXBOX **/
     
     grid-area: header;
-    display: grid;
+    display: flex;
     border: 3px solid rgb(21, 1, 41);
 }
 
 
 .container__header__logo {
 
-    display: grid;
+    display: flex;
     justify-items: center;
     align-items: center;
-    
+    margin:auto;
     
 }
 
-.logo {
+.container__header__logo img {
     display:flex;
     margin:auto;
-    width: 30%;
-    
+    width: 40%;
 
 }
 
@@ -248,8 +247,16 @@ body {
 .containertorneo__header__nav ul{
 
     margin-top: 5%;  /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
+    list-style: none;
 
 }
+
+.containertorneo__header__nav ul a {
+
+    color: white;
+    text-decoration: none;
+}
+
 
 .containertorneo__header__nav a img {
     
@@ -329,8 +336,16 @@ body {
 .containernoticias__header__nav ul{
 
     margin-top: 5%;  /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
+    list-style: none;
 
 }
+
+.containertorneo__header__nav ul a {
+
+    color: white;
+    text-decoration: none;
+}
+
 
 .containernoticias__header__nav a img {
     
@@ -433,8 +448,16 @@ body {
 .containercontacto__header__nav ul{
 
     margin-top: 5%;  /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
+    list-style: none;
 
 }
+
+.containertorneo__header__nav ul a {
+
+    color: white;
+    text-decoration: none;
+}
+
 
 .containercontacto__header__nav a img {
     
@@ -474,6 +497,7 @@ body {
 .containercontacto__main__section__button {
 
     margin-top: 10%;
+
 }
 
 
@@ -540,7 +564,7 @@ body {
     
         
         display:flex;
-        flex-direction: column;
+        flex-direction:  column;
         grid-area: header;
         border: 3px solid rgb(21, 1, 41);
         
@@ -550,14 +574,14 @@ body {
     .container__header__logo {
     
           display: flex;
-          flex-direction: column;
-        
+          flex-direction: column; 
     }
     
     .container__header__logo a img {
         align-items: center;
         justify-items: center;  /** No está funcionando**/
-        height: 70%;
+        height: 100%;
+        width: 80%;
     }
     
     .container__main { 
@@ -780,7 +804,6 @@ CONTINUAR ACÁ **/
     display: flex;
     list-style: none;
 
-
       /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
 
 }
@@ -865,11 +888,6 @@ CONTINUAR ACÁ **/
 
 
 /** ACÁ EMPIEZA NOTICIAS.HTML DESKTOP **/
-
-
-
-
-
 
 
 
