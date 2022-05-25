@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../css/codigo.css">
     <link rel="icon" href="../images/logo.jpg">
     <link rel="stylesheet" href="../Hover-master/css/hover-min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>Torneos</title>
 
 
@@ -17,23 +18,44 @@
 <div class="containertorneo">
 
    
-    <header class="containertorneo__header"> 
+    <header> 
 
 
-        <nav class="containertorneo__header__nav">
-        
-            <a href="../index.html"> <img src="../images/logo.jpg"> </a>
-
-            <ul>
-  
-                   <li>   <a class="hvr-underline-from-left" href="../index.html" > INICIO </a> </li>
-                   <li>   <a class="hvr-underline-from-left" href="#">             TORNEOS </a> </li>
-                   <li>   <a class="hvr-underline-from-left" href="noticias.html"> NOTICIAS </a> </li>
-                   <li>   <a class="hvr-underline-from-left" href="contacto.html"> CONTACTO </a> </li>
-                      
-            </ul>
-
-         </nav>
+        <div class="container">
+            <div class="row">
+   
+               <div class="container-fluid">
+                   <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+                       <div class="container-fluid">
+                         <a class="navbar-brand" href="#"><img  class ="w-50" src="../images/logo.jpg" alt="imagen_logo"></a>
+                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                         </button>
+                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                             <li class="nav-item">
+                               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                             </li>
+                             <li class="nav-item">
+                               <a class="nav-link" href="#">Torneos</a>
+                             </li>
+                             <li class="nav-item">
+                               <a class="nav-link" href="./noticias.html">Noticias</a>
+                             </li>
+                             <li class="nav-item">
+                               <a class="nav-link" href="./contacto.html">Contacto</a>
+                             </li>
+                            
+                           </ul>
+                             
+               </div>
+               </div>
+                </nav>
+                </div>
+              
+   
+         </div>
+         </div>
 
     </header>
 
