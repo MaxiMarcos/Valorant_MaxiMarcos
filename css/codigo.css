@@ -20,7 +20,7 @@ body {
 /** ESTO ES PARA VISTA MOBILE **/
 
 
-/** ESTO ES PARA INDEX **/
+/** ACA EMPIEZA INDEX **/
 
 .contenedor {
 
@@ -74,15 +74,17 @@ body {
     
 }
 
-.contenedor__main__twitch {
+.contenedor__main__nosotros {
     display: grid;
     grid-area: twitch;
     justify-items: center;
     align-items: center;
+    color: rgb(243, 208, 243);
+    font-family: "arial";
 }
 
 
-.contenedor__main__twitch img {
+.contenedor__main__nosotros img {
 
     display: flex;
     margin:auto;
@@ -100,6 +102,8 @@ body {
     grid-area: torneos;
     justify-items: center;
     align-items: center;
+    color: rgb(129, 14, 114);
+    font-family: "arial";
     
 }
 
@@ -118,6 +122,8 @@ body {
     grid-area: noticias;
     justify-items: center;
     align-items: center;
+    color: rgb(243, 208, 243);
+    font-family: "arial";
     
 }
 
@@ -131,15 +137,17 @@ body {
    
 } 
 
-.contenedor__main__nosotros {
+.contenedor__main__contacto {
     display: grid;
     grid-area: nosotros;
     justify-items: center;
     align-items: center;
+    color: rgb(129, 14, 114);
+    font-family: "arial";
     
 }
 
-.contenedor__main__nosotros img {
+.contenedor__main__contacto img {
 
     display: flex;
     margin:auto;
@@ -526,6 +534,23 @@ body {
 
 }
 
+/*ACA EMPIEZA NOSOTROS.HTML MOBILE*/
+
+.containernosotros__footer {
+
+    height: 20vh;
+    background: rgb(24, 1, 1);
+    color: white;
+    margin-top: 8%;
+}
+
+
+
+.containernosotros__footer__logos img {
+    width: 3%;
+
+}
+
 
 
 
@@ -585,7 +610,6 @@ body {
     }
     
     .contenedor__main { 
-        height: 100%;  
         display: grid;
         grid-area: main;
         grid-template-columns: 1fr 1fr;
@@ -596,7 +620,7 @@ body {
         
     }
     
-    .contenedor__main__twitch {
+    .contenedor__main__nosotros {
         
         display: grid;
         grid-area: twitch;
@@ -606,7 +630,7 @@ body {
     }
     
     
-    .contenedor__main__twitch img {
+    .contenedor__main__nosotros img {
     
         display: flex;
         margin:auto;
@@ -655,7 +679,7 @@ body {
        
     } 
     
-    .contenedor__main__nosotros {
+    .contenedor__main__contacto {
         display: grid;
         grid-area: nosotros;
         justify-items: center;
@@ -663,7 +687,7 @@ body {
         
     }
     
-    .contenedor__main__nosotros img {
+    .contenedor__main__contacto img {
     
         display: flex;
         margin:auto;
