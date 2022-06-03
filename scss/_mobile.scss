@@ -1,0 +1,554 @@
+
+* {
+    @import "_variables";
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; }
+
+
+
+body {
+
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #6d003e, #6c0049, #670056, #5f0064, #510b72, #481074, #3d1476, #311777, #32146c, #321162, #310e58, #2f0c4f);
+    
+    
+}
+
+/** ESTO ES PARA VISTA MOBILE **/
+
+
+/** ACA EMPIEZA INDEX **/
+
+.contenedor {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr 0.5fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "aside"
+    "footer"
+    ;
+}
+
+
+.contenedor__header {     /** CAMBIAR A FLEXBOX **/
+    
+    grid-area: header;
+    display: flex;
+    border: 3px solid rgb(21, 1, 41);
+}
+
+
+.contenedor__header__logo {
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin:auto;
+    
+}
+
+.contenedor__header__logo img {
+    display:flex;
+    margin:auto;
+    width: 40%;
+
+}
+
+
+
+.contenedor__main { 
+    
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "twitch torneos"
+    "noticias nosotros";
+    
+}
+
+.contenedor__main__nosotros {
+    display: grid;
+    grid-area: twitch;
+    justify-items: center;
+    align-items: center;
+    color: rgb(243, 208, 243);
+    font-family: "arial";
+}
+
+
+.contenedor__main__nosotros img {
+
+    display: flex;
+    margin:auto;
+    border: 5px outset;
+    width: 80%;
+    height: 18vh;  
+           /** Porque no puedo cambiar height con %? **/
+    
+    
+
+}
+
+.contenedor__main__torneos {
+    display: grid;
+    grid-area: torneos;
+    justify-items: center;
+    align-items: center;
+    color: rgb(129, 14, 114);
+    font-family: "arial";
+    
+}
+
+.contenedor__main__torneos img {
+
+    display: flex;
+    margin:auto;
+    border: 5px outset;
+    width: 85%; 
+    height: 18vh;
+    /** Porque no puedo cambiar height con %?**/
+} 
+
+.contenedor__main__noticias {
+    display: grid;
+    grid-area: noticias;
+    justify-items: center;
+    align-items: center;
+    color: rgb(243, 208, 243);
+    font-family: "arial";
+    
+}
+
+.contenedor__main__noticias img {
+
+    display: flex;
+    margin:auto;
+    border: 5px outset rgb(78, 7, 136);
+    width: 85%; 
+    height: 18vh;
+   
+} 
+
+.contenedor__main__contacto {
+    display: grid;
+    grid-area: nosotros;
+    justify-items: center;
+    align-items: center;
+    color: rgb(129, 14, 114);
+    font-family: "arial";
+    
+}
+
+.contenedor__main__contacto img {
+
+    display: flex;
+    margin:auto;
+    border: 5px outset rgb(78, 7, 136);
+    width: 90%; 
+    height: 18vh;
+    /** Porque no puedo cambiar height?**/
+} 
+
+
+
+
+.contenedor__aside {
+    
+    display: grid;
+    grid-area: aside;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-areas: 
+    "texto"
+    "map";
+
+}
+
+.contenedor__aside__texto {
+    margin-top: 1rem;
+    grid-area: texto;
+}
+
+.contenedor__aside__map {
+    margin-top: 1rem;
+    grid-area: map;
+    height: 80%;
+}
+
+
+
+
+.contenedor__footer {
+    
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "texto redes";
+    
+
+}
+
+.contenedor__footer__registro {
+
+    grid-area: texto;
+    
+}
+
+.contenedor__footer__logos {
+
+    grid-area: redes;
+    
+}
+
+.contenedor__footer__logos img {
+
+    width: 10%;
+
+}
+
+
+
+/** ESTO ES PARA TORNEOS.HTML **/
+
+
+
+.containertorneo {
+
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-areas: 
+    "aside header"
+    "aside main"
+    "footer footer";
+    gap: 6px;
+    
+}
+
+
+.containertorneo__header {
+
+    grid-area: header;
+    background: rgb(24, 1, 1);
+    
+
+}
+
+.containertorneo__header__nav {
+    
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+.containertorneo__header__nav ul{
+
+    margin-top: 5%;  /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
+    list-style: none;
+
+}
+
+.containertorneo__header__nav ul a {
+
+    color: $blanco;
+    text-decoration: none;
+}
+
+
+.containertorneo__header__nav a img {
+    
+    width: 40%;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+
+
+
+.containertorneo__main{
+
+    grid-area: main;
+    background: rgb(19, 13, 56);
+    color: $blanco;
+    
+}
+
+.containertorneo__main iframe {
+
+    width: 100%;
+}
+
+.containertorneo__aside {
+
+    grid-area: aside;
+    background: rgb(19, 13, 56)
+    
+}
+
+
+
+.containertorneo__footer {
+
+    grid-area: footer;
+    background: rgb(24, 1, 1);
+    color: $blanco;
+}
+
+.containertorneo__footer__logos img {
+
+    width: 5%;
+    margin-top: 10%;
+}
+
+
+/**ACÁ EMPIEZA NOTICIAS EN MOBILE**/
+
+.containernoticias {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 6fr 1.5fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+}
+
+.containernoticias__header {
+
+    grid-area: header;
+    background: rgb(24, 1, 1);
+    
+
+}
+
+.containernoticias__header__nav {
+    
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+.containernoticias__header__nav ul{
+
+    margin-top: 5%;  /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
+    list-style: none;
+
+}
+
+.containertorneo__header__nav ul a {
+
+    color: $blanco;
+    text-decoration: none;
+}
+
+
+.containernoticias__header__nav a img {
+    
+    width: 40%;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+.containernoticias__main {
+
+    grid-area: main;
+
+}
+
+.containernoticias__main__section {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "noti1 noti2"
+    "noti3 noti4";
+
+}
+
+.containernoticias__main__div1 {
+
+    grid-area: noti1;
+
+}
+
+.containernoticias__main__div2 {
+
+    
+    grid-area: noti2;
+    
+}
+
+.containernoticias__main__div3 {
+
+    grid-area: noti3;
+     
+}
+
+.containernoticias__main__div4 {
+
+    grid-area: noti4;
+    
+}
+
+.containernoticias__main section img {
+
+    margin-left: 10%;
+    width: 80%;
+
+}
+
+
+.containernoticias__footer {
+    grid-area: footer;
+    background: rgb(24, 1, 1);
+    color: $blanco;
+}
+
+
+.containernoticias__footer__logos img {
+
+    margin-top: 10%;
+    width: 5%;
+}
+
+
+/** ACA EMPIEZA CONTACTO.HTML MOBILE **/
+
+.containercontacto {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.containercontacto__header {
+
+    grid-area: header;
+    background: rgb(24, 1, 1);
+    height: 130%;
+
+}
+
+.containercontacto__header__nav {
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containercontacto__header__nav ul{
+
+    margin-top: 5%;  /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
+    list-style: none;
+
+}
+
+.containertorneo__header__nav ul a {
+
+    color: $blanco;
+    text-decoration: none;
+}
+
+
+.containercontacto__header__nav a img {
+    
+    width: 40%;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+
+.containercontacto__main {
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.containercontacto__main__section {
+
+    background: #03035d;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    align-items: center;
+    color: $blanco;
+    border-radius: 10px;
+}
+
+.containercontacto__main__section__casilla {
+
+    background: rgb(61, 61, 104);
+    padding: 8px;
+    margin-top: 5%;
+}
+
+.containercontacto__main__section__button {
+
+    margin-top: 10%;
+
+}
+
+
+.containercontacto__main__section h3 {
+
+    margin-bottom: 5%;
+}
+
+
+
+.containercontacto__footer {
+
+    grid-area: footer;
+    background: rgb(24, 1, 1);
+    color: $blanco;
+
+}
+
+
+
+
+.containercontacto__footer__logos img {
+
+    margin-top: 10%;
+    width: 5%;
+
+}
+
+/*ACA EMPIEZA NOSOTROS.HTML MOBILE*/
+
+.containernosotros__footer {
+
+    height: 20vh;
+    background: rgb(24, 1, 1);
+    color: $blanco;
+    margin-top: 8%;
+}
+
+
+
+.containernosotros__footer__logos img {
+    width: 3%;
+
+}
+
+
+
