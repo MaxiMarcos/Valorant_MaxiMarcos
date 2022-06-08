@@ -1,0 +1,162 @@
+/** ESTO ES PARA TORNEOS.HTML EN MOBILE**/
+
+.containertorneo {
+
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-areas: 
+    "aside header"
+    "aside main"
+    "footer footer";
+    gap: 6px;
+    
+}
+
+
+.containertorneo__header {
+
+    grid-area: header;
+    background: rgb(24, 1, 1);
+.containertorneo__header__nav {
+    
+    display: flex;
+    justify-content: flex-end;
+.containertorneo__header__nav ul{
+
+    margin-top: 5%;  /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
+    list-style: none;
+.containertorneo__header__nav ul a {
+
+    color: white;
+    text-decoration: none;
+.containertorneo__header__nav a img {
+    
+    width: 40%;
+    margin-left: 35%;
+    margin-top: 10%;
+} } } } }
+    
+
+.containertorneo__main{
+
+    grid-area: main;
+    background: rgb(19, 13, 56);
+    color: white;
+.containertorneo__main iframe {
+
+    width: 100%;
+} }
+    
+.containertorneo__aside {
+
+    grid-area: aside;
+    background: rgb(19, 13, 56)   
+}
+
+.containertorneo__footer {
+
+    grid-area: footer;
+    background: rgb(24, 1, 1);
+    color: wheat;
+.containertorneo__footer__logos img {
+
+    width: 5%;
+    margin-top: 10%;
+} }
+
+@media screen and (min-width:576px) {
+
+/** ESTO ES PARA TORNEOS.HTML **/
+
+.containertorneo {
+
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+    grid-template-rows: 0.5fr 1.5fr 0.5fr;
+    grid-template-areas: 
+    "aside header"
+    "aside main"
+    "footer footer";
+    gap: 6px;  
+    
+}
+
+
+.containertorneo__header {
+
+    grid-area: header;
+.containertorneo__header__nav {
+    
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+.containertorneo__header__nav ul{
+
+    display: flex;
+    list-style: none;
+
+      /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
+.containertorneo__header__nav a img {
+
+    width: 50%;
+    margin-left: -80%;
+} } } }
+    
+.containertorneo__main{
+
+    grid-area: main;
+    background: red;
+    color: white;
+    display: flex;
+.containertorneo__main iframe {
+
+    width: 70%;
+.containertorneo__main__div {
+
+    background: blue;
+    width: 30%;
+
+} } }
+    
+.containertorneo__aside {
+
+    grid-area: aside;
+    background: rgb(19, 13, 56);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.containertorneo__footer {
+
+    grid-area: footer;
+    background: rgb(24, 1, 1);
+    color: wheat;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "texto redes";
+.containertorneo__footer__logos {
+
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+.containertorneo__footer__logos img {
+
+    margin-left: 80%;
+.containertorneo__footer__registro {
+    
+    grid-area: texto;
+    display: flex;
+
+    margin-top: 5%; 
+} } } }
+    
+
+}
