@@ -15,8 +15,56 @@ body {
   /**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
   /**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
   /** ESTO ES PARA INDEX **/
+  /**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
+  /** ESTO ES PARA INDEX **/
   /** ESTO ES PARA TORNEOS.HTML EN MOBILE**/
+  /* .containertorneo__header {
+
+    grid-area: header;
+    background: rgb(24, 1, 1);
+.containertorneo__header__nav {
+    
+    display: flex;
+    justify-content: flex-end;
+.containertorneo__header__nav ul{
+
+    margin-top: 5%;  ¿COMO SEPARAR LOS ENLACES (SPACE BETWEEN?)?
+    list-style: none;
+.containertorneo__header__nav ul a {
+
+    color: white;
+    text-decoration: none;
+.containertorneo__header__nav a img {  
+    
+    width: 40%;
+    margin-left: 35%;
+    margin-top: 10%;       
+} } } } }         */
+  /** ESTO ES PARA TORNEOS.HTML DESKTOP ***/
   /**ACÁ EMPIEZA NOTICIAS EN MOBILE**/
+  /** .containernoticias__header {
+
+    grid-area: header;
+    background: rgb(24, 1, 1);
+    
+.containernoticias__header__nav {
+    
+    display: flex;
+    justify-content: flex-end;
+.containernoticias__header__nav ul{
+
+    margin-top: 5%; 
+    list-style: none;
+.containertorneo__header__nav ul a {
+
+    color: white;
+    text-decoration: none;
+.containernoticias__header__nav a img {
+    
+    width: 40%;
+    margin-left: 35%;
+    margin-top: 10%;
+} } } } } **/
   /** ACÁ EMPIEZA NOTICIAS.HTML DESKTOP **/
   /** ACÁ EMPIEZA NOTICIAS.HTML DESKTOP **/
   /*ACA EMPIEZA NOSOTROS.HTML MOBILE*/
@@ -26,6 +74,29 @@ body {
   /**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
   /**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
   /** ACA EMPIEZA CONTACTO.HTML MOBILE **/
+  /** .containercontacto__header {
+
+    grid-area: header;
+    background: rgb(24, 1, 1);
+    height: 130%;
+.containercontacto__header__nav {
+
+    display: flex;
+    justify-content: flex-end;
+.containercontacto__header__nav ul{
+
+    margin-top: 5%; 
+    list-style: none;
+.containertorneo__header__nav ul a {
+
+    color: white;
+    text-decoration: none;
+.containercontacto__header__nav a img {
+    
+    width: 40%;
+    margin-left: 35%;
+    margin-top: 10%;
+} } } } }  **/
   /** ACA EMPIEZA CONTACTO.HTML DESKTOP **/
   /** ACA EMPIEZA CONTACTO.HTML DESKTOP **/ }
   body .contenedor {
@@ -38,15 +109,15 @@ body {
     grid-area: header;
     display: flex;
     border: 3px solid #150129; }
-    body .contenedor__header .contenedor__header__logo {
-      display: flex;
-      justify-items: center;
-      align-items: center;
-      margin: auto; }
-      body .contenedor__header .contenedor__header__logo .contenedor__header__logo img {
-        display: flex;
-        margin: auto;
-        width: 40%; }
+  body .contenedor__header__logo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: auto; }
+  body .contenedor__header__logo img {
+    display: flex;
+    margin: auto;
+    width: 40%; }
   body .contenedor__main {
     display: grid;
     grid-area: main;
@@ -60,13 +131,13 @@ body {
     align-items: center;
     color: #f3d0f3;
     font-family: "arial"; }
-    body .contenedor__main__nosotros .contenedor__main__nosotros img {
-      display: flex;
-      margin: auto;
-      border: 5px outset;
-      width: 80%;
-      height: 18vh;
-      /** Porque no puedo cambiar height con %? **/ }
+  body .contenedor__main__nosotros img {
+    display: flex;
+    margin: auto;
+    border: 5px outset;
+    width: 80%;
+    height: 18vh;
+    /** Porque no puedo cambiar height con %? **/ }
   body .contenedor__main__torneos {
     display: grid;
     grid-area: torneos;
@@ -74,13 +145,13 @@ body {
     align-items: center;
     color: #810e72;
     font-family: "arial"; }
-    body .contenedor__main__torneos .contenedor__main__torneos img {
-      display: flex;
-      margin: auto;
-      border: 5px outset;
-      width: 85%;
-      height: 18vh;
-      /** Porque no puedo cambiar height con %?**/ }
+  body .contenedor__main__torneos img {
+    display: flex;
+    margin: auto;
+    border: 5px outset;
+    width: 85%;
+    height: 18vh;
+    /** Porque no puedo cambiar height con %?**/ }
   body .contenedor__main__noticias {
     display: grid;
     grid-area: noticias;
@@ -88,12 +159,12 @@ body {
     align-items: center;
     color: #f3d0f3;
     font-family: "arial"; }
-    body .contenedor__main__noticias .contenedor__main__noticias img {
-      display: flex;
-      margin: auto;
-      border: 5px outset #4e0788;
-      width: 85%;
-      height: 18vh; }
+  body .contenedor__main__noticias img {
+    display: flex;
+    margin: auto;
+    border: 5px outset #4e0788;
+    width: 85%;
+    height: 18vh; }
   body .contenedor__main__contacto {
     display: grid;
     grid-area: nosotros;
@@ -101,115 +172,115 @@ body {
     align-items: center;
     color: #810e72;
     font-family: "arial"; }
-    body .contenedor__main__contacto .contenedor__main__contacto img {
-      display: flex;
-      margin: auto;
-      border: 5px outset #4e0788;
-      width: 90%;
-      height: 18vh;
-      /** Porque no puedo cambiar height?**/ }
+  body .contenedor__main__contacto img {
+    display: flex;
+    margin: auto;
+    border: 5px outset #4e0788;
+    width: 90%;
+    height: 18vh;
+    /** Porque no puedo cambiar height?**/ }
   body .contenedor__aside {
     display: grid;
     grid-area: aside;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1.5fr;
     grid-template-areas: "texto" "map"; }
-    body .contenedor__aside .contenedor__aside__texto {
-      margin-top: 1rem;
-      grid-area: texto; }
-    body .contenedor__aside .contenedor__aside__map {
-      margin-top: 1rem;
-      grid-area: map;
-      height: 80%; }
+  body .contenedor__aside__texto {
+    margin-top: 1rem;
+    grid-area: texto; }
+  body .contenedor__aside__map {
+    margin-top: 1rem;
+    grid-area: map;
+    height: 80%; }
   body .contenedor__footer {
     grid-area: footer;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "texto redes"; }
-    body .contenedor__footer .contenedor__footer__registro {
-      grid-area: texto; }
-      body .contenedor__footer .contenedor__footer__registro .contenedor__footer__logos {
-        grid-area: redes; }
-        body .contenedor__footer .contenedor__footer__registro .contenedor__footer__logos .contenedor__footer__logos img {
-          width: 10%; }
+  body .contenedor__footer__registro {
+    grid-area: texto; }
+  body .contenedor__footer__logos {
+    grid-area: redes; }
+  body .contenedor__footer__logos img {
+    width: 10%; }
   @media screen and (min-width: 576px) {
     body .contenedor {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 0.5fr 1.5fr 1fr 0.2fr;
       grid-template-areas: "header" "main" "aside" "footer"; }
-      body .contenedor .contenedor__header {
+    body .contenedor__header {
+      display: flex;
+      flex-direction: column;
+      grid-area: header;
+      border: 3px solid #150129; }
+      body .contenedor__header .contenedor__header__logo {
         display: flex;
-        flex-direction: column;
-        grid-area: header;
-        border: 3px solid #150129; }
-        body .contenedor .contenedor__header .contenedor__header__logo {
-          display: flex;
-          flex-direction: column; }
-          body .contenedor .contenedor__header .contenedor__header__logo .contenedor__header__logo a img {
-            align-items: center;
-            justify-items: center;
-            /** No está funcionando**/
-            height: 100%;
-            width: 80%; }
+        flex-direction: column; }
+        body .contenedor__header .contenedor__header__logo .contenedor__header__logo a img {
+          align-items: center;
+          justify-items: center;
+          /** No está funcionando**/
+          height: 100%;
+          width: 80%; }
     body .contenedor__main {
       display: grid;
       grid-area: main;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "twitch torneos" "noticias nosotros"; }
-      body .contenedor__main .contenedor__main__nosotros {
-        display: grid;
-        grid-area: twitch;
-        justify-items: center;
-        align-items: center;
-        height: 100%; }
-        body .contenedor__main .contenedor__main__nosotros .contenedor__main__nosotros img {
-          display: flex;
-          margin: auto;
-          border: 5px outset;
-          width: 100%;
-          height: 30vh;
-          /** No puedo utilizar %**/
-          transition: 1s; }
-          body .contenedor__main .contenedor__main__nosotros .contenedor__main__nosotros img .contenedor__main__torneos {
-            display: grid;
-            grid-area: torneos;
-            justify-items: center;
-            align-items: center; }
-            body .contenedor__main .contenedor__main__nosotros .contenedor__main__nosotros img .contenedor__main__torneos .contenedor__main__torneos img {
-              display: flex;
-              margin: auto;
-              border: 5px outset;
-              width: 80%;
-              height: 35vh;
-              /** Porque no puedo cambiar height?**/
-              transition: 1s; }
-              body .contenedor__main .contenedor__main__nosotros .contenedor__main__nosotros img .contenedor__main__torneos .contenedor__main__torneos img .contenedor__main__noticias {
-                display: grid;
-                grid-area: noticias;
-                justify-items: center;
-                align-items: center; }
-                body .contenedor__main .contenedor__main__nosotros .contenedor__main__nosotros img .contenedor__main__torneos .contenedor__main__torneos img .contenedor__main__noticias .contenedor__main__noticias img {
-                  display: flex;
-                  margin: auto;
-                  border: 5px outset #4e0788;
-                  width: 85%;
-                  height: 30vh;
-                  transition: 1s; }
-                  body .contenedor__main .contenedor__main__nosotros .contenedor__main__nosotros img .contenedor__main__torneos .contenedor__main__torneos img .contenedor__main__noticias .contenedor__main__noticias img .contenedor__main__contacto {
-                    display: grid;
-                    grid-area: nosotros;
-                    justify-items: center;
-                    align-items: center; }
-                    body .contenedor__main .contenedor__main__nosotros .contenedor__main__nosotros img .contenedor__main__torneos .contenedor__main__torneos img .contenedor__main__noticias .contenedor__main__noticias img .contenedor__main__contacto .contenedor__main__contacto img {
-                      display: flex;
-                      margin: auto;
-                      border: 5px outset #4e0788;
-                      width: 90%;
-                      height: 30vh;
-                      transition: 1s; }
+    body .contenedor__main__nosotros {
+      display: grid;
+      grid-area: twitch;
+      justify-items: center;
+      align-items: center;
+      height: 100%; }
+      body .contenedor__main__nosotros .contenedor__main__nosotros img {
+        display: flex;
+        margin: auto;
+        border: 5px outset;
+        width: 100%;
+        height: 30vh;
+        /** No puedo utilizar %**/
+        transition: 1s; }
+    body .contenedor__main__torneos {
+      display: grid;
+      grid-area: torneos;
+      justify-items: center;
+      align-items: center; }
+      body .contenedor__main__torneos .contenedor__main__torneos img {
+        display: flex;
+        margin: auto;
+        border: 5px outset;
+        width: 80%;
+        height: 35vh;
+        /** Porque no puedo cambiar height?**/
+        transition: 1s; }
+    body .contenedor__main__noticias {
+      display: grid;
+      grid-area: noticias;
+      justify-items: center;
+      align-items: center; }
+      body .contenedor__main__noticias .contenedor__main__noticias img {
+        display: flex;
+        margin: auto;
+        border: 5px outset #4e0788;
+        width: 85%;
+        height: 30vh;
+        transition: 1s; }
+    body .contenedor__main__contacto {
+      display: grid;
+      grid-area: nosotros;
+      justify-items: center;
+      align-items: center; }
+      body .contenedor__main__contacto .contenedor__main__contacto img {
+        display: flex;
+        margin: auto;
+        border: 5px outset #4e0788;
+        width: 90%;
+        height: 30vh;
+        transition: 1s; }
     body .contenedor__main img:hover {
       width: 120%;
       height: 35vh; }
@@ -228,25 +299,150 @@ body {
       grid-template-columns: 1fr;
       grid-template-rows: 0.1fr 1fr;
       grid-template-areas: "texto" "map"; }
-      body .contenedor__aside .contenedor__aside__texto {
+    body .contenedor__aside__texto {
+      display: flex;
+      grid-area: texto; }
+      body .contenedor__aside__texto .contenedor__aside__map {
         display: flex;
-        grid-area: texto; }
-        body .contenedor__aside .contenedor__aside__texto .contenedor__aside__map {
-          display: flex;
-          grid-area: map; }
+        grid-area: map; }
     body .contenedor__footer {
       grid-area: footer;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: "texto redes"; }
-      body .contenedor__footer .contenedor__footer__registro {
-        grid-area: texto;
-        display: flex; }
-      body .contenedor__footer .contenedor__footer__logos {
-        grid-area: redes;
-        display: flex;
-        flex-direction: column; }
-        body .contenedor__footer .contenedor__footer__logos .contenedor__footer__logos img {
+    body .contenedor__footer__registro {
+      grid-area: texto;
+      display: flex; }
+    body .contenedor__footer__logos {
+      grid-area: redes;
+      display: flex;
+      flex-direction: column; }
+      body .contenedor__footer__logos .contenedor__footer__logos img {
+        margin-left: 80%;
+        width: 5%; } }
+  @media screen and (min-width: 576px) {
+    body {
+      /**
+
+    .contenedor__header {
+    
+        
+        display:flex;
+        flex-direction:  column;
+        grid-area: header;
+        border: 3px solid rgb(21, 1, 41);
+        
+    }
+    
+    
+    .contenedor__header__logo {
+    
+          display: flex;
+          flex-direction: column; 
+    }
+    
+    .contenedor__header__logo a img {
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        width: 80%;
+    }
+
+    **/ }
+      body .contenedor__main {
+        display: grid;
+        grid-area: main;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "twitch torneos" "noticias nosotros"; }
+        body .contenedor__main .contenedor__main__nosotros {
+          display: grid;
+          grid-area: twitch;
+          justify-items: center;
+          align-items: center;
+          height: 100%; }
+        body .contenedor__main .contenedor__main__nosotros img {
+          display: flex;
+          margin: auto;
+          border: 5px outset;
+          width: 100%;
+          height: 30vh;
+          /** No puedo utilizar %**/
+          transition: 1s; }
+        body .contenedor__main .contenedor__main__torneos {
+          display: grid;
+          grid-area: torneos;
+          justify-items: center;
+          align-items: center; }
+        body .contenedor__main .contenedor__main__torneos img {
+          display: flex;
+          margin: auto;
+          border: 5px outset;
+          width: 80%;
+          height: 35vh;
+          /** Porque no puedo cambiar height?**/
+          transition: 1s; }
+        body .contenedor__main .contenedor__main__noticias {
+          display: grid;
+          grid-area: noticias;
+          justify-items: center;
+          align-items: center; }
+        body .contenedor__main .contenedor__main__noticias img {
+          display: flex;
+          margin: auto;
+          border: 5px outset #4e0788;
+          width: 85%;
+          height: 30vh;
+          transition: 1s; }
+        body .contenedor__main .contenedor__main__contacto {
+          display: grid;
+          grid-area: nosotros;
+          justify-items: center;
+          align-items: center; }
+        body .contenedor__main .contenedor__main__contacto img {
+          display: flex;
+          margin: auto;
+          border: 5px outset #4e0788;
+          width: 90%;
+          height: 30vh;
+          transition: 1s; }
+      body .contenedor__main img:hover {
+        width: 120%;
+        height: 35vh; }
+      body .contenedor__main__torneos img:hover {
+        width: 105%;
+        height: 35vh; }
+      body .contenedor__main__noticias img:hover {
+        width: 100%;
+        height: 35vh; }
+      body .contenedor__main__nosotros img:hover {
+        width: 100%; }
+      body .contenedor__aside {
+        height: 100%;
+        display: grid;
+        grid-area: aside;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-areas: "texto" "map"; }
+        body .contenedor__aside .contenedor__aside__texto {
+          display: flex;
+          grid-area: texto; }
+        body .contenedor__aside .contenedor__aside__map {
+          display: flex;
+          grid-area: map; }
+      body .contenedor__footer {
+        grid-area: footer;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "texto redes"; }
+        body .contenedor__footer .contenedor__footer__registro {
+          grid-area: texto;
+          display: flex; }
+        body .contenedor__footer .contenedor__footer__logos {
+          grid-area: redes;
+          display: flex;
+          flex-direction: column; }
+        body .contenedor__footer .contenedor__footer__logos img {
           margin-left: 80%;
           width: 5%; } }
   body .containertorneo {
@@ -255,29 +451,12 @@ body {
     grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-template-areas: "aside header" "aside main" "footer footer";
     gap: 6px; }
-  body .containertorneo__header {
-    grid-area: header;
-    background: #180101; }
-    body .containertorneo__header .containertorneo__header__nav {
-      display: flex;
-      justify-content: flex-end; }
-      body .containertorneo__header .containertorneo__header__nav .containertorneo__header__nav ul {
-        margin-top: 5%;
-        /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
-        list-style: none; }
-        body .containertorneo__header .containertorneo__header__nav .containertorneo__header__nav ul .containertorneo__header__nav ul a {
-          color: white;
-          text-decoration: none; }
-          body .containertorneo__header .containertorneo__header__nav .containertorneo__header__nav ul .containertorneo__header__nav ul a .containertorneo__header__nav a img {
-            width: 40%;
-            margin-left: 35%;
-            margin-top: 10%; }
   body .containertorneo__main {
     grid-area: main;
     background: #130d38;
     color: white; }
-    body .containertorneo__main .containertorneo__main iframe {
-      width: 100%; }
+  body .containertorneo__main iframe {
+    width: 100%; }
   body .containertorneo__aside {
     grid-area: aside;
     background: #130d38; }
@@ -290,7 +469,29 @@ body {
       margin-top: 10%; }
   @media screen and (min-width: 576px) {
     body {
-      /** ESTO ES PARA TORNEOS.HTML **/ }
+      /**
+.containertorneo__header {
+
+    grid-area: header;
+.containertorneo__header__nav {
+    
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+.containertorneo__header__nav ul{
+
+    display: flex;
+    list-style: none;
+
+      ¿COMO SEPARAR LOS ENLACES (SPACE BETWEEN?)?
+.containertorneo__header__nav a img {
+
+    width: 50%;
+    margin-left: -80%;
+} } } }
+
+**/ }
       body .containertorneo {
         overflow-x: hidden;
         display: grid;
@@ -298,30 +499,16 @@ body {
         grid-template-rows: 0.5fr 1.5fr 0.5fr;
         grid-template-areas: "aside header" "aside main" "footer footer";
         gap: 6px; }
-      body .containertorneo__header {
-        grid-area: header; }
-        body .containertorneo__header .containertorneo__header__nav {
-          width: 80%;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          body .containertorneo__header .containertorneo__header__nav .containertorneo__header__nav ul {
-            display: flex;
-            list-style: none;
-            /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/ }
-            body .containertorneo__header .containertorneo__header__nav .containertorneo__header__nav ul .containertorneo__header__nav a img {
-              width: 50%;
-              margin-left: -80%; }
       body .containertorneo__main {
         grid-area: main;
         background: red;
         color: white;
         display: flex; }
-        body .containertorneo__main .containertorneo__main iframe {
-          width: 70%; }
-          body .containertorneo__main .containertorneo__main iframe .containertorneo__main__div {
-            background: blue;
-            width: 30%; }
+      body .containertorneo__main iframe {
+        width: 70%; }
+      body .containertorneo__main__div {
+        background: blue;
+        width: 30%; }
       body .containertorneo__aside {
         grid-area: aside;
         background: #130d38;
@@ -341,52 +528,35 @@ body {
           grid-area: redes;
           display: flex;
           flex-direction: column; }
-          body .containertorneo__footer .containertorneo__footer__logos .containertorneo__footer__logos img {
-            margin-left: 80%; }
-            body .containertorneo__footer .containertorneo__footer__logos .containertorneo__footer__logos img .containertorneo__footer__registro {
-              grid-area: texto;
-              display: flex;
-              margin-top: 5%; } }
+        body .containertorneo__footer .containertorneo__footer__logos img {
+          margin-left: 80%; }
+        body .containertorneo__footer .containertorneo__footer__registro {
+          grid-area: texto;
+          display: flex;
+          margin-top: 5%; } }
   body .containernoticias {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 6fr 1.5fr;
     grid-template-areas: "header" "main" "footer"; }
-  body .containernoticias__header {
-    grid-area: header;
-    background: #180101; }
-    body .containernoticias__header .containernoticias__header__nav {
-      display: flex;
-      justify-content: flex-end; }
-      body .containernoticias__header .containernoticias__header__nav .containernoticias__header__nav ul {
-        margin-top: 5%;
-        /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
-        list-style: none; }
-        body .containernoticias__header .containernoticias__header__nav .containernoticias__header__nav ul .containertorneo__header__nav ul a {
-          color: white;
-          text-decoration: none; }
-          body .containernoticias__header .containernoticias__header__nav .containernoticias__header__nav ul .containertorneo__header__nav ul a .containernoticias__header__nav a img {
-            width: 40%;
-            margin-left: 35%;
-            margin-top: 10%; }
   body .containernoticias__main {
     grid-area: main; }
-    body .containernoticias__main .containernoticias__main__section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "noti1 noti2" "noti3 noti4"; }
-      body .containernoticias__main .containernoticias__main__section .containernoticias__main__div1 {
-        grid-area: noti1; }
-        body .containernoticias__main .containernoticias__main__section .containernoticias__main__div1 .containernoticias__main__div2 {
-          grid-area: noti2; }
-          body .containernoticias__main .containernoticias__main__section .containernoticias__main__div1 .containernoticias__main__div2 .containernoticias__main__div3 {
-            grid-area: noti3; }
-            body .containernoticias__main .containernoticias__main__section .containernoticias__main__div1 .containernoticias__main__div2 .containernoticias__main__div3 .containernoticias__main__div4 {
-              grid-area: noti4; }
-              body .containernoticias__main .containernoticias__main__section .containernoticias__main__div1 .containernoticias__main__div2 .containernoticias__main__div3 .containernoticias__main__div4 .containernoticias__main section img {
-                margin-left: 10%;
-                width: 80%; }
+  body .containernoticias__main__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "noti1 noti2" "noti3 noti4"; }
+    body .containernoticias__main__section .containernoticias__main__div1 {
+      grid-area: noti1; }
+      body .containernoticias__main__section .containernoticias__main__div1 .containernoticias__main__div2 {
+        grid-area: noti2; }
+        body .containernoticias__main__section .containernoticias__main__div1 .containernoticias__main__div2 .containernoticias__main__div3 {
+          grid-area: noti3; }
+          body .containernoticias__main__section .containernoticias__main__div1 .containernoticias__main__div2 .containernoticias__main__div3 .containernoticias__main__div4 {
+            grid-area: noti4; }
+  body .containernoticias__main section img {
+    margin-left: 10%;
+    width: 80%; }
   body .containernoticias__footer {
     grid-area: footer;
     background: #180101;
@@ -406,24 +576,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 4fr 1fr;
     grid-template-areas: "header" "main" "footer"; }
-  body .containercontacto__header {
-    grid-area: header;
-    background: #180101;
-    height: 130%; }
-    body .containercontacto__header .containercontacto__header__nav {
-      display: flex;
-      justify-content: flex-end; }
-      body .containercontacto__header .containercontacto__header__nav .containercontacto__header__nav ul {
-        margin-top: 5%;
-        /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
-        list-style: none; }
-        body .containercontacto__header .containercontacto__header__nav .containercontacto__header__nav ul .containertorneo__header__nav ul a {
-          color: white;
-          text-decoration: none; }
-          body .containercontacto__header .containercontacto__header__nav .containercontacto__header__nav ul .containertorneo__header__nav ul a .containercontacto__header__nav a img {
-            width: 40%;
-            margin-left: 35%;
-            margin-top: 10%; }
   body .containercontacto__main {
     grid-area: main;
     display: flex;

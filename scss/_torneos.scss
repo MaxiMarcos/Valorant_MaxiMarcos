@@ -14,7 +14,7 @@
 }
 
 
-.containertorneo__header {
+/* .containertorneo__header {
 
     grid-area: header;
     background: rgb(24, 1, 1);
@@ -24,29 +24,29 @@
     justify-content: flex-end;
 .containertorneo__header__nav ul{
 
-    margin-top: 5%;  /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
+    margin-top: 5%;  ¿COMO SEPARAR LOS ENLACES (SPACE BETWEEN?)?
     list-style: none;
 .containertorneo__header__nav ul a {
 
     color: white;
     text-decoration: none;
-.containertorneo__header__nav a img {
+.containertorneo__header__nav a img {  
     
     width: 40%;
     margin-left: 35%;
-    margin-top: 10%;
-} } } } }
+    margin-top: 10%;       
+} } } } }         */
     
 
 .containertorneo__main{
 
     grid-area: main;
     background: rgb(19, 13, 56);
-    color: white;
+    color: white; }
 .containertorneo__main iframe {
 
     width: 100%;
-} }
+}
     
 .containertorneo__aside {
 
@@ -58,32 +58,33 @@
 
     grid-area: footer;
     background: rgb(24, 1, 1);
-    color: wheat;
+    color: wheat; 
 .containertorneo__footer__logos img {
 
     width: 5%;
     margin-top: 10%;
 } }
 
+/** ESTO ES PARA TORNEOS.HTML DESKTOP ***/
+
 @media screen and (min-width:576px) {
 
-/** ESTO ES PARA TORNEOS.HTML **/
 
-.containertorneo {
+    .containertorneo {
 
-    overflow-x: hidden;
-    display: grid;
-    grid-template-columns: 0.5fr 4fr;
-    grid-template-rows: 0.5fr 1.5fr 0.5fr;
-    grid-template-areas: 
-    "aside header"
-    "aside main"
-    "footer footer";
-    gap: 6px;  
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: 0.5fr 4fr;
+        grid-template-rows: 0.5fr 1.5fr 0.5fr;
+        grid-template-areas: 
+        "aside header"
+        "aside main"
+        "footer footer";
+        gap: 6px;  
+        
+    }
     
-}
-
-
+/**
 .containertorneo__header {
 
     grid-area: header;
@@ -98,28 +99,28 @@
     display: flex;
     list-style: none;
 
-      /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
+      ¿COMO SEPARAR LOS ENLACES (SPACE BETWEEN?)?
 .containertorneo__header__nav a img {
 
     width: 50%;
     margin-left: -80%;
 } } } }
+
+**/
     
 .containertorneo__main{
 
     grid-area: main;
     background: red;
     color: white;
-    display: flex;
+    display: flex; }
 .containertorneo__main iframe {
 
-    width: 70%;
+    width: 70%; }
 .containertorneo__main__div {
 
     background: blue;
-    width: 30%;
-
-} } }
+    width: 30%; }
     
 .containertorneo__aside {
 
@@ -146,17 +147,17 @@
 
     grid-area: redes;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; }
 .containertorneo__footer__logos img {
 
-    margin-left: 80%;
+    margin-left: 80%; }
 .containertorneo__footer__registro {
     
     grid-area: texto;
     display: flex;
 
-    margin-top: 5%; 
-} } } }
+    margin-top: 5%;  }
+}
     
 
 }

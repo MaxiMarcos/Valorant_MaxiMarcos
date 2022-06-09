@@ -11,7 +11,7 @@
     "footer";
 }
 
-.containercontacto__header {
+/** .containercontacto__header {
 
     grid-area: header;
     background: rgb(24, 1, 1);
@@ -22,7 +22,7 @@
     justify-content: flex-end;
 .containercontacto__header__nav ul{
 
-    margin-top: 5%;  /** COMO SEPARAR LOS ENLACES (SPACE BETWEEN?) **/
+    margin-top: 5%; 
     list-style: none;
 .containertorneo__header__nav ul a {
 
@@ -33,16 +33,14 @@
     width: 40%;
     margin-left: 35%;
     margin-top: 10%;
-} } } } } 
+} } } } }  **/
 
 
 .containercontacto__main {
     grid-area: main;
     display: flex;
     align-items: center;
-    justify-content: center; 
-}
-
+    justify-content: center; }
 .containercontacto__main__section {
 
     background: #03035d;
