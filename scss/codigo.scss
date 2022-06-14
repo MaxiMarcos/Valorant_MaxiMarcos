@@ -5,13 +5,13 @@
 body {
 
     height: 100vh;
-    background-image: linear-gradient(to right bottom, #6d003e, #6c0049, #670056, #5f0064, #510b72, #481074, #3d1476, #311777, #32146c, #321162, #310e58, #2f0c4f);
+    background-image: linear-gradient(to right bottom, #6d003e, #6c0049, #670056, #5f0064, #510b72, #481074, #3d1476, #311777, #32146c, #321162, #310e58, #2f0c4f);}
      
 
 @import "_variables";
+@import "_mixins";
 @import "_index";
 @import "_torneos";
 @import "_noticias";
 @import "_nosotros";
 @import "_contacto";
-}
