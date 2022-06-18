@@ -1,6 +1,4 @@
-@mixin tamaños ($width, $height, $padding, $margin) {
+@mixin tamaños ($width, $height) {
     width: $width;
     height: $height;
-    padding: $padding;
-    margin: $margin;
 }

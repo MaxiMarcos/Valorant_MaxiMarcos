@@ -13,31 +13,6 @@
     
 }
 
-
-/* .containertorneo__header {
-
-    grid-area: header;
-    background: rgb(24, 1, 1);
-.containertorneo__header__nav {
-    
-    display: flex;
-    justify-content: flex-end;
-.containertorneo__header__nav ul{
-
-    margin-top: 5%;  ¿COMO SEPARAR LOS ENLACES (SPACE BETWEEN?)?
-    list-style: none;
-.containertorneo__header__nav ul a {
-
-    color: white;
-    text-decoration: none;
-.containertorneo__header__nav a img {  
-    
-    width: 40%;
-    margin-left: 35%;
-    margin-top: 10%;       
-} } } } }         */
-    
-
 .containertorneo__main{
 
     grid-area: main;
@@ -51,19 +26,43 @@
 .containertorneo__aside {
 
     grid-area: aside;
-    background: rgb(19, 13, 56)   
+    background: rgb(19, 13, 56) ;  
+    color: rgb(143, 56, 138);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 
 .containertorneo__footer {
-
+    
     grid-area: footer;
-    background: rgb(24, 1, 1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "texto redes";
     color: wheat; 
+    background: rgb(24, 1, 1);
+}
+
+.containertorneo__footer__registro {
+
+    grid-area: texto; }
+    
+.containertorneo__footer__registro h6 {
+
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containertorneo__footer__logos {
+
+    grid-area: redes;
+    padding-top: 20%; }
+    
 .containertorneo__footer__logos img {
 
-    width: 5%;
-    margin-top: 10%;
-} }
+    width: 12%;
+    margin-left: 85%;
+}
 
 /** ESTO ES PARA TORNEOS.HTML DESKTOP ***/
 
@@ -84,49 +83,24 @@
         
     }
     
-/**
-.containertorneo__header {
-
-    grid-area: header;
-.containertorneo__header__nav {
-    
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-.containertorneo__header__nav ul{
-
-    display: flex;
-    list-style: none;
-
-      ¿COMO SEPARAR LOS ENLACES (SPACE BETWEEN?)?
-.containertorneo__header__nav a img {
-
-    width: 50%;
-    margin-left: -80%;
-} } } }
-
-**/
     
 .containertorneo__main{
 
     grid-area: main;
-    background: red;
     color: white;
     display: flex; }
 .containertorneo__main iframe {
 
-    width: 70%; }
+    width: 70%;
+    height:100%; }
 .containertorneo__main__div {
 
-    background: blue;
     width: 30%; }
     
 .containertorneo__aside {
 
     grid-area: aside;
     background: rgb(19, 13, 56);
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -134,30 +108,24 @@
 
 .containertorneo__footer {
 
-    grid-area: footer;
     background: rgb(24, 1, 1);
-    color: wheat;
+    display: flex;
+    flex-direction: column;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "texto redes";
 .containertorneo__footer__logos {
+    padding-top: 0%;}
 
-    grid-area: redes;
-    display: flex;
-    flex-direction: column; }
 .containertorneo__footer__logos img {
+    margin-left: 48%; 
+    width: 2%;   }
 
-    margin-left: 80%; }
+
 .containertorneo__footer__registro {
-    
-    grid-area: texto;
     display: flex;
-
-    margin-top: 5%;  }
+    align-items: center;
+    justify-content: center; 
+    padding-top: 1%; }
 }
-    
+
 
 }
