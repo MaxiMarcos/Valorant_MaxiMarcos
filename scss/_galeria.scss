@@ -1,0 +1,176 @@
+/**ACÁ EMPIEZA NOTICIAS EN MOBILE**/
+
+
+.containergaleria__main {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+ }
+
+ .containergaleria__main__evento {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ .containergaleria__main .containergaleria__main__evento figure {
+
+    width: 100%;
+    height: 100%;
+ }
+
+    
+.containergaleria__main .containergaleria__main__evento img {
+    height: 300px;
+    width: 320px;
+    border: 5px solid rgb(173, 104, 162);
+    object-fit: cover;
+}
+
+    
+.containergaleria__footer {
+   height: 18%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   grid-template-areas:
+   "texto redes";
+   color: wheat; 
+   background: rgb(24, 1, 1);
+.containergaleria__footer__registro {
+   grid-area: texto;
+}
+.containergaleria__footer__registro h6 {
+   font-size: small;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.containergaleria__footer__logos{
+   grid-area: redes;
+   margin-top: 15%;
+}
+
+.containergaleria__footer__logos img {
+      margin-left: 85%;
+      width: 12%;
+} }
+
+/**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
+/**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
+
+/** ESTO ES PARA GALERIA **/
+
+@media screen and (min-width:576px) {
+
+  /** PROBLEMA CON GRID AREA**/
+
+    .containergaleria__main {
+        width: 100%;
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 400px;
+        grid-template-areas: 
+        'img4 img3 img2'
+        'img4 img3 img5'
+        'img7 img6 img1'
+        'img5 img6 img1'
+        'img8 img9 img9';
+        padding: 40px;
+        gap: 10px;
+     }
+    
+     .containergaleria__main__evento--img1 {
+        grid-area: img1;
+     }
+
+     .containergaleria__main__evento--img2 {
+        grid-area: img2;
+     }
+
+     .containergaleria__main__evento--img3 {
+        grid-area: img3;
+     }
+
+     .containergaleria__main__evento--img4 {
+        grid-area: img4;
+
+     }
+
+     .containergaleria__main__evento--img5 {
+        grid-area: img5;
+
+     }
+
+     .containergaleria__main__evento--img6 {
+        grid-area: img6;
+
+     }
+
+     .containergaleria__main__evento--img7 {
+        grid-area: img7;
+
+     }
+
+     .containergaleria__main__evento--img8 {
+        grid-area: img8;
+
+     }
+
+     .containergaleria__main__evento--img9 {
+        grid-area: img9;
+
+     }
+
+
+
+     .containergaleria__main__evento {
+        height: 100%;
+        width: 100%;
+    }
+    
+
+     .containergaleria__main .containergaleria__main__evento figure {
+    
+        width: 90%;
+        height: 100%;
+     }
+      
+    .containergaleria__main .containergaleria__main__evento img {
+        height: 100%;
+        width:  100%;
+        border: 5px solid rgb(173, 104, 162);
+        
+    }
+
+   .containergaleria__footer {
+      display: flex;
+      flex-direction: column;
+      height: 24%;
+      
+   .containergaleria__footer__registro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 1%;
+     
+  }
+   .containergaleria__footer__logos {
+      padding-top: 0%;  
+      margin: auto;
+     }
+
+   .containergaleria__footer__logos img {
+      margin-left: 0%;
+      width: 5%; 
+      margin-left: 45%;}   
+  }
+    
+
+}
+
