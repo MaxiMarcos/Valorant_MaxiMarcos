@@ -1,19 +1,66 @@
 /*ACA EMPIEZA NOSOTROS.HTML MOBILE*/
 
 .containernosotros__footer {
-
-    height: 20vh;
-    background: rgb(24, 1, 1);
-    color: $blanco;
-    margin-top: 8%;
-.containernosotros__footer__logos img {
-    width: 3%;
-
-} }
     
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "texto redes";
+    color: wheat; 
+    background: rgb(24, 1, 1);
+    margin-top: 3%;
+}
+
+.containernosotros__footer__registro {
+
+    grid-area: texto; }
+    
+.containernosotros__footer__registro h6 {
+
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containernosotros__footer__logos {
+
+    grid-area: redes;
+    padding-top: 20%; }
+    
+.containernosotros__footer__logos img {
+
+    width: 12%;
+    margin-left: 85%;
+}
+
 
 /**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
 /**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
-/**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
-/**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
-/**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
+
+
+@media screen and (min-width:576px) {
+
+    .containernosotros__footer {
+
+        background: rgb(24, 1, 1);
+        display: flex;
+        flex-direction: column;
+        margin-top: 7%;
+    
+    .containernosotros__footer__logos {
+        padding-top: 0%;}
+    
+    .containernosotros__footer__logos img {
+        margin-left: 48%; 
+        width: 2%;   }
+    
+    
+    .containernosotros__footer__registro {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding-top: 1%; }
+    }
+    
+    }
