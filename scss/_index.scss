@@ -7,7 +7,7 @@
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 3fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 4fr 1.5fr 0.5fr;
     grid-template-areas: 
     "header"
     "main"
@@ -53,6 +53,13 @@
         gap: 5px;
     }
 
+
+    #link{
+        color: rgb(238, 92, 92);
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+      }
     
 .contenedor__main__noticia1 {
         background-image: url(../images/indexCS.jpg);
@@ -64,10 +71,9 @@
     }
 
 .contenedor__main__noticia1 p {
-        font-size: medium;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
         text-align: end;
-        margin-top: 70%;
+        margin-top: 50%;
     }
 
 
@@ -82,7 +88,8 @@
     }
 
 .contenedor__main__noticia2 p {
-    margin-top: 70%;
+    font-size: small;
+    margin-top: 50%;
     text-align: end;
 }
     
@@ -94,6 +101,7 @@
     }
     
 .contenedor__main__noticia3 p {
+    font-size: small;
     margin-top: 50%;
     text-align: end;
 }
@@ -107,6 +115,7 @@
     } 
 
 .contenedor__main__noticia4 p {
+    font-size: small;
     margin-top: 50%;
     text-align: end;
 }
@@ -121,6 +130,7 @@
     }
 
 .contenedor__main__noticia5 p {
+    font-size: small;
     margin-top: 50%;
     text-align: end;
 }
@@ -193,11 +203,6 @@
 /**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
 /**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
 /**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
-/**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
-/**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
-/**************************************************************ACA EMPIEZA EL MEDIA DESKTOP**********************************************************/
-
-/** ESTO ES PARA INDEX **/
 
 @media screen and (min-width:576px) {
 
@@ -206,16 +211,12 @@
         display: grid;
         grid-area: main;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
         grid-template-areas:
         "uno dos dos"
         "uno dos dos"
         "tres cuatro cinco";
         width: 90%;
-        height: 100%;
-        margin: auto;
-        padding: 10px;
-        gap: 5px;
     }
 
     
