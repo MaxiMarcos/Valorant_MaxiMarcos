@@ -8,6 +8,12 @@ body {
   height: 100vh;
   background-image: linear-gradient(to right bottom, #6d003e, #6c0049, #670056, #5f0064, #510b72, #481074, #3d1476, #311777, #32146c, #321162, #310e58, #2f0c4f); }
 
+.form-control {
+  background-color: #7e1281; }
+
+.btn {
+  color: #f302fc; }
+
 /** ESTO ES PARA VISTA MOBILE **/
 /** ACA EMPIEZA INDEX **/
 .contenedor {
@@ -15,23 +21,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 4fr 1.5fr 0.5fr;
   grid-template-areas: "header" "main" "aside" "footer"; }
-
-.contenedor__header {
-  /** CAMBIAR A FLEXBOX **/
-  grid-area: header;
-  display: flex;
-  border: 3px solid #150129; }
-
-.contenedor__header__logo {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  margin: auto; }
-
-.contenedor__header__logo img {
-  display: flex;
-  margin: auto;
-  width: 40%; }
 
 .contenedor__main {
   display: grid;
@@ -57,7 +46,8 @@ body {
   background-position: 0%;
   color: #ffdada;
   grid-area: uno;
-  width: 100%; }
+  width: 100%;
+  transition: all 1s; }
 
 .contenedor__main__noticia1 p {
   font-size: small;
@@ -70,7 +60,8 @@ body {
   background-position: center;
   grid-area: dos;
   margin-left: 0%;
-  color: #ffdada; }
+  color: #ffdada;
+  transition: all 1s; }
 
 .contenedor__main__noticia2 p {
   font-size: small;
@@ -81,7 +72,8 @@ body {
   background-image: url(../images/indeximg.jpg);
   background-size: cover;
   color: #ffdada;
-  grid-area: tres; }
+  grid-area: tres;
+  transition: all 1s; }
 
 .contenedor__main__noticia3 p {
   font-size: small;
@@ -93,7 +85,8 @@ body {
   background-size: cover;
   background-position: center;
   color: #ffdada;
-  grid-area: cuatro; }
+  grid-area: cuatro;
+  transition: all 1s; }
 
 .contenedor__main__noticia4 p {
   font-size: small;
@@ -106,12 +99,28 @@ body {
   background-position: center;
   color: #ffdada;
   height: 100%;
-  grid-area: cinco; }
+  grid-area: cinco;
+  transition: all 1s; }
 
 .contenedor__main__noticia5 p {
   font-size: small;
   margin-top: 50%;
   text-align: end; }
+
+.contenedor__main__noticia1:hover {
+  filter: drop-shadow(20px 20px 20px #ff008c); }
+
+.contenedor__main__noticia2:hover {
+  filter: drop-shadow(20px 20px 20px #ff008c); }
+
+.contenedor__main__noticia3:hover {
+  filter: drop-shadow(20px 20px 20px #9604a3); }
+
+.contenedor__main__noticia4:hover {
+  filter: drop-shadow(20px 20px 20px #ff008c); }
+
+.contenedor__main__noticia5:hover {
+  filter: drop-shadow(20px 20px 20px #9604a3); }
 
 .contenedor__aside {
   display: grid;
